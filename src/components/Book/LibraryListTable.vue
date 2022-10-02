@@ -1,11 +1,11 @@
 <template>
   <td>
-    <v-simple-table>
+    <v-simple-table >
       <template >
         <tbody>
         <tr v-for="(item, i) in data.library" :key="i">
-          <td><v-icon >mdi-book</v-icon>{{ item.name }}</td>
-          <td><v-chip>Stock {{ item.pivot.stock }}</v-chip></td>
+          <td class="text-left"><v-icon >mdi-book</v-icon>{{ item.name }}</td>
+          <td class="text-right"><v-chip>Stock {{ item.pivot.stock }}</v-chip></td>
         </tr>
         </tbody>
       </template>
